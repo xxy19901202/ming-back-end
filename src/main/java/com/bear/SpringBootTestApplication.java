@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @SpringBootApplication
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+@EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class })
 public class SpringBootTestApplication {
 
-	@RequestMapping("/")
-	public String hello(){
-		return "Hello World!";
-	}
-	
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootTestApplication.class, args);
-	}
+    @RequestMapping("/")
+    public String hello() {
+        return "Hello World!";
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootTestApplication.class, args);
+    }
 }

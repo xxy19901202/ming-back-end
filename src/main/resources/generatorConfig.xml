@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<classPathEntry
+		location="/Users/bear/.m2/repository/mysql/mysql-connector-java/5.1.41/mysql-connector-java-5.1.41.jar" />
+	<context id="context1">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/dev_ming" userId="root"
+			password="1qaz2wsx" />
+		<javaModelGenerator targetPackage="com.bear.entity"
+			targetProject="ming-back-end/src/main/java" />
+		<sqlMapGenerator targetPackage="com.bear.mapper"
+			targetProject="ming-back-end/src/main/java" />
+		<javaClientGenerator targetPackage="com.bear.dao"
+			targetProject="ming-back-end/src/main/java" type="XMLMAPPER" />
+		<table schema="dev_ming" tableName="user" domainObjectName="User">
+			<!-- <columnOverride column="userid" property="???" /> <columnOverride 
+				column="username" property="???" /> <columnOverride column="userpassword" 
+				property="???" /> -->
+		</table>
+	</context>
+</generatorConfiguration>
